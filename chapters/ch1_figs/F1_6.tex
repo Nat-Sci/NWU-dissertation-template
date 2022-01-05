@@ -1,0 +1,115 @@
+
+\usetikzlibrary{trees,calc}
+%\pgfdeclarelayer{background}
+%\pgfsetlayers{background,main}
+
+	
+
+    \tikzstyle{gb} = [rectangle, 
+                      thick,
+                      anchor=west,
+                      inner sep=2pt,
+                      rounded corners, 
+                      text=white, 
+                      font=\bfseries,
+                      text centered, 
+                      minimum width=4cm, 
+                      minimum height=0.628cm, 
+                      text centered, 
+                      draw=black!70, 
+                      fill=gray!70]
+
+     \tikzstyle{bb} = [rectangle, 
+                       thick,
+                       anchor=west,
+                       inner sep=2pt,
+                       rounded corners, 
+                       text=white, 
+                       font=\bfseries,
+                       text centered,  
+                       minimum width=4cm, 
+                       minimum height=0.628cm, 
+                       text centered, 
+                       draw=gray!70, 
+                       fill=blue!40]
+                       
+%      \tikzstyle{ga} = [ultra thick,->,>=latex,lightgray,line width=0.07cm]
+
+
+\begin{figure}[htbp]
+	\centering
+     \begin{tikzpicture}[
+     grow via three points={
+     	one child at (0.8,-0.7) and two children at (0.8,-0.7) and (0.8,-1.4)
+     },
+     edge from parent path={
+     	($(\tikzparentnode\tikzparentanchor)+(.4cm,0pt)$) |- (\tikzchildnode\tikzchildanchor)
+     },
+     growth parent anchor=west,
+     parent anchor=south west,% = \tikzparentanchor
+     %   child anchor=west,%        = \tikzchildanchor
+     %   every child node/.style={anchor=west}% already in "every node"
+     ]
+     \node [bb] {基于上下文的视觉感认知计算建模及其在核磁共振影像处理中的应用} 
+     child [missing] {}
+     child { node  [bb] {绪论 （第\ref{c1}章）} }
+     %child [missing] {}
+     child { node [bb] {视觉上下文的感认知计算建模 （第\ref{c2}章）} 
+     child  { node  [gb, draw=none] {总结归纳了视觉上下文工作机制} }
+     child  { node  [gb, draw=none] {提出了上下文计算视觉模型} }
+     child { node [bb] {基于层次化超像素聚类的图像上下文生成方法 （第\ref{c3}章）} %[label={[xshift=6.0cm, yshift=-0.58cm, color=gray] Documentation for developers}]
+     	child { node  [gb, draw=none] {自适应地生成超像素数目} }
+     	child { node  [gb, draw=none] {以模仿视觉上下文形成的方式生成图像上下文} }
+     	child { node  [gb, draw=none] {提出结构熵以衡量超像素编码影像结构信息的代价} } % 非均衡编码，带来更高的视觉编码效率
+     		%child { node [draw=none] {\ldots}}
+     	%child [missing] {}
+     }
+     % child [missing] {}
+     % child [missing] {}
+     child [missing] {}
+     child [missing] {}
+     child [missing] {}
+     child { node [bb] {基于图像上下文的多核滤波算法（第\ref{c4}章）}
+     	child { node [gb, draw=none] {几何化解释双边滤波器} }
+     	child { node [gb, draw=none] {利用图像上下文自动生成滤波器参数，提升滤波器自适应性} }
+     	%child [missing] {}    	
+     	child { node [bb] {基于多核滤波器的空间自适应相位校正算法（第\ref{c5}章）}
+     		% child { node [gb, draw=none]  {适用于处理弥散核磁张量影像中的非平稳噪声} }
+     		% child { node [gb, draw=none]  {适用于应对弥散核磁张量影像中可变信噪比}  }     
+     	} 
+     }
+     %child [missing] {}
+     %child [missing] {}
+     %child [missing] {}
+     %child [missing] {}
+     child [missing] {}
+     child [missing] {}
+     child [missing] {}
+     child [missing] {}
+     child { node  [bb]  {融合上下文信息的大脑神经纤维束分类算法 （第\ref{c6}章）}
+     	child { node   [gb, draw=none] {利用图卷积网络提取神经纤维束的上下文几何特征} }
+     	child { node   [gb, draw=none] {利用循环神经网络融合上下文几何特征和局部位置特征} }
+        }
+     }
+    %child [missing] {}
+    %child [missing] {}
+    %child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child [missing] {}
+    child { node [bb] {总结与展望 （第\ref{c7}章）} };     
+     \end{tikzpicture}  
+    \caption{\textbf{论文主要架构}}  
+    \label{fig:1_6}  
+\end{figure}
