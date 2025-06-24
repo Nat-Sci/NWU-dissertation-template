@@ -1,0 +1,9 @@
+*.aux  
+*.lof  
+*.lot  
+*.out
+*.toc
+*.log
+ctextemp_templet.pdf
+bib/*.aux
+chapters/*.aux
