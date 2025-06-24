@@ -4,6 +4,7 @@
 *.out
 *.toc
 *.log
+ctextemp_templet.synctex.gz
 ctextemp_templet.pdf
 bib/*.aux
 chapters/*.aux
