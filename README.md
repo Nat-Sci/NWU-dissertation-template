@@ -1,5 +1,7 @@
 # NWU-dissertation-template
 
+# 编译时请使用XeLatex
+
 # 西北大学 学位论文 latex 模板
 
 论文模板分为 7 个部分；
