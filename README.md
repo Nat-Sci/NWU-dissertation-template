@@ -1,6 +1,6 @@
 # NWU-dissertation-template
 
-# 编译时请使用XeLatex
+编译时请使用XeLatex
 
 # 西北大学 学位论文 latex 模板
 
