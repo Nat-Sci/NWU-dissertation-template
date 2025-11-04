@@ -1,5 +1,9 @@
 # NWU-dissertation-template
 
+编译时请使用XeLatex
+
+以及如果遇到了texstudio闪退的情况，请将所有编译相关的文件全部删除再重新打开即可。不同版本的texlive之间存在一定的冲突。
+
 # 西北大学 学位论文 latex 模板
 
 论文模板分为 7 个部分；
